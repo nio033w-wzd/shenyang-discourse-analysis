@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>沈阳"东北亚国际化中心城市"形象建构的多维话语分析 | 东北大学</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --c-bg:#f8f7f4; --c-surface:#fff; --c-text:#1b1b1b; --c-muted:#5e5c5a;
+  --c-accent:#0f4c6b; --c-accent2:#1a6b8a; --c-gold:#8b6914; --c-gold-bg:#fdf6e3;
+  --c-red:#991b1b; --c-green:#166534; --c-green-bg:#f0fdf4;
+  --c-border:#e0ded8; --c-shadow:0 1px 3px rgba(0,0,0,.06);
+  --nav-w:260px; --radius:8px;
+}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{font-family:"Noto Serif SC","STSong","Songti SC","宋体","Noto Sans SC","PingFang SC",sans-serif;background:var(--c-bg);color:var(--c-text);line-height:1.75;font-size:15px}
+
+/* Cover */
+.cover{
+  position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,#050d14 0%,#0a1a2a 25%,#0d2840 50%,#0f3a55 75%,#0d2840 100%);
+  overflow:hidden;text-align:center;padding:60px 24px;
+}
+.cover::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.03) 0%,transparent 50%),radial-gradient(circle at 80% 60%,rgba(100,180,220,.04) 0%,transparent 40%),radial-gradient(circle at 50% 80%,rgba(255,255,255,.02) 0%,transparent 30%);animation:coverPulse 8s ease-in-out infinite alternate}
+@keyframes coverPulse{0%{opacity:.6}100%{opacity:1}}
+.cover .nodes{position:absolute;inset:0;pointer-events:none}
+.cover .node{position:absolute;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);box-shadow:0 0 8px rgba(100,180,220,.6);animation:nodeFloat 6s ease-in-out infinite}
+.cover .node:nth-child(1){left:10%;top:25%;animation-delay:0s}
+.cover .node:nth-child(2){left:25%;top:15%;animation-delay:.8s;width:6px;height:6px}
+.cover .node:nth-child(3){left:45%;top:10%;animation-delay:1.6s}
+.cover .node:nth-child(4){left:65%;top:20%;animation-delay:.4s;width:5px;height:5px}
+.cover .node:nth-child(5){left:80%;top:35%;animation-delay:2s}
+.cover .node:nth-child(6){left:15%;top:55%;animation-delay:1.2s;width:6px;height:6px}
+.cover .node:nth-child(7){left:35%;top:70%;animation-delay:.6s}
+.cover .node:nth-child(8){left:55%;top:65%;animation-delay:1.8s;width:5px;height:5px}
+.cover .node:nth-child(9){left:75%;top:75%;animation-delay:2.4s}
+.cover .node:nth-child(10){left:90%;top:50%;animation-delay:1s}
+.cover .node:nth-child(11){left:5%;top:80%;animation-delay:1.4s;width:7px;height:7px}
+.cover .node:nth-child(12){left:50%;top:85%;animation-delay:2.2s}
+.cover .node:nth-child(13){left:85%;top:15%;animation-delay:3s}
+.cover .node:nth-child(14){left:30%;top:40%;animation-delay:2.6s;width:5px;height:5px}
+.cover .node:nth-child(15){left:70%;top:55%;animation-delay:1.5s}
+@keyframes nodeFloat{0%,100%{transform:translateY(0);opacity:.3}50%{transform:translateY(-18px);opacity:.8}}
+.cover .ring{position:absolute;border-radius:50%;border:1px solid rgba(100,180,220,.08);animation:ringPulse 6s ease-in-out infinite}
+.cover .ring:nth-of-type(1){width:500px;height:500px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:0s}
+.cover .ring:nth-of-type(2){width:700px;height:700px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:1s}
+.cover .ring:nth-of-type(3){width:900px;height:900px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:2s}
+@keyframes ringPulse{0%,100%{opacity:.2;transform:translate(-50%,-50%) scale(1)}50%{opacity:.5;transform:translate(-50%,-50%) scale(1.03)}}
+.cover .content{position:relative;z-index:2;max-width:800px}
+.cover .badge{display:inline-block;border:1px solid rgba(255,255,255,.2);padding:8px 22px;border-radius:24px;font-size:13px;letter-spacing:3px;color:rgba(255,255,255,.7);margin-bottom:32px;backdrop-filter:blur(10px);background:rgba(255,255,255,.03)}
+.cover h1{font-size:clamp(28px,5vw,44px);font-weight:700;color:#fff;line-height:1.4;letter-spacing:2px;margin-bottom:16px;text-shadow:0 2px 20px rgba(0,0,0,.3)}
+.cover h1 .accent{color:#7cc8f0}
+.cover .subtitle{font-size:15px;color:rgba(255,255,255,.55);font-weight:300;letter-spacing:1px;margin-bottom:40px;line-height:1.6}
+.cover .cover-stats{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin-bottom:48px}
+.cover .cover-stat{text-align:center}
+.cover .cover-stat .num{font-size:36px;font-weight:700;color:#7cc8f0;line-height:1.1}
+.cover .cover-stat .lbl{font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;margin-top:4px}
+.cover .scroll-hint{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.3);font-size:11px;letter-spacing:2px;animation:scrollBounce 2s ease-in-out infinite}
+@keyframes scrollBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+.cover .scroll-hint .arrow{width:20px;height:20px;border-right:1px solid rgba(255,255,255,.3);border-bottom:1px solid rgba(255,255,255,.3);transform:rotate(45deg)}
+
+/* Sidebar */
+.sidebar{position:fixed;top:0;left:0;width:var(--nav-w);height:100vh;background:var(--c-accent);color:#fff;overflow-y:auto;z-index:100;padding:28px 0 40px;display:flex;flex-direction:column}
+.sidebar .logo{padding:0 24px 20px;border-bottom:1px solid rgba(255,255,255,.15);margin-bottom:16px}
+.sidebar .logo h2{font-size:15px;line-height:1.5;font-weight:600;letter-spacing:.5px}
+.sidebar .logo span{font-size:11px;opacity:.65;display:block;margin-top:4px}
+.sidebar nav{flex:1;padding:0 12px}
+.sidebar nav a{display:block;color:rgba(255,255,255,.75);text-decoration:none;padding:8px 12px;border-radius:6px;font-size:13px;transition:all .15s;margin-bottom:1px}
+.sidebar nav a:hover,.sidebar nav a.active{background:rgba(255,255,255,.12);color:#fff}
+.sidebar nav .nav-section{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.4);padding:16px 12px 6px}
+.sidebar .footer{padding:16px 24px 0;font-size:11px;opacity:.5;border-top:1px solid rgba(255,255,255,.1);margin-top:16px}
+.menu-toggle{display:none;position:fixed;top:12px;left:12px;z-index:200;width:40px;height:40px;background:var(--c-accent);color:#fff;border:none;border-radius:8px;font-size:20px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.sidebar.open{transform:translateX(0)}
+
+/* Main */
+.main{margin-left:var(--nav-w);padding:40px 48px;max-width:1100px}
+.section{margin-bottom:48px}
+.section-header{margin-bottom:24px}
+.section-header h2{font-size:26px;font-weight:700;color:var(--c-accent);letter-spacing:.5px}
+.section-header .sub{font-size:13px;color:var(--c-muted);margin-top:4px;letter-spacing:.5px}
+.card{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius);padding:24px 28px;box-shadow:var(--c-shadow);margin-bottom:16px;transition:box-shadow .2s}
+.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card h3{font-size:17px;color:var(--c-accent);margin-bottom:6px}
+.card h4{font-size:15px;color:var(--c-text);margin-bottom:4px}
+.card .meta{font-size:12px;color:var(--c-muted);margin-bottom:10px;display:flex;gap:16px;flex-wrap:wrap}
+.card .meta span{background:var(--c-accent);color:#fff;padding:2px 10px;border-radius:10px;font-size:11px}
+.card p{font-size:14px;color:var(--c-text);margin-bottom:8px;line-height:1.75}
+.card .highlight{background:var(--c-accent);color:#fff;padding:14px 18px;border-radius:6px;font-size:14px;margin-top:12px}
+.card .highlight-alt{background:var(--c-gold-bg);border-left:3px solid var(--c-gold);padding:12px 16px;border-radius:0 6px 6px 0;font-size:14px;margin-top:12px}
+details{margin-top:12px}
+details summary{cursor:pointer;color:var(--c-accent2);font-size:14px;font-weight:600;padding:8px 0;border-bottom:1px dashed var(--c-border);user-select:none;list-style:none;display:flex;align-items:center;gap:8px}
+details summary::before{content:'▶';font-size:10px;transition:transform .2s;display:inline-block}
+details[open] summary::before{transform:rotate(90deg)}
+details .detail-content{padding:12px 0 4px}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0}
+.data-table thead th{background:var(--c-accent);color:#fff;padding:8px 12px;text-align:left;font-weight:500;font-size:12px;letter-spacing:.5px}
+.data-table tbody td{padding:7px 12px;border-bottom:1px solid var(--c-border)}
+.data-table tbody tr:nth-child(even){background:#fafaf8}
+.data-table tbody tr:hover{background:var(--c-accent);color:#fff}
+.data-table .num{text-align:right;font-feature-settings:"tnum"}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.stat-card{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius);padding:20px;text-align:center;box-shadow:var(--c-shadow)}
+.stat-card .num{font-size:32px;font-weight:700;color:var(--c-accent);line-height:1.2}
+.stat-card .label{font-size:12px;color:var(--c-muted);margin-top:4px}
+.concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.concept-card{background:var(--c-surface);border:2px solid var(--c-gold-bg);border-radius:var(--radius);padding:20px 22px}
+.concept-card h4{font-size:15px;color:var(--c-gold);margin-bottom:4px}
+.concept-card p{font-size:13px;color:var(--c-text)}
+.concept-card .abbr{font-size:11px;color:var(--c-muted);font-family:"SF Mono","Cascadia Code",monospace}
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--c-border)}
+.timeline-item{position:relative;margin-bottom:20px}
+.timeline-item::before{content:'';position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--c-accent);border:2px solid #fff;box-shadow:0 0 0 2px var(--c-accent)}
+.timeline-item .date{font-size:12px;color:var(--c-muted);font-weight:600;letter-spacing:1px}
+.timeline-item h4{font-size:15px;color:var(--c-accent);margin:2px 0}
+.timeline-item p{font-size:13px;color:var(--c-text)}
+.col2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.col3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tag{display:inline-block;background:var(--c-gold-bg);color:var(--c-gold);padding:3px 10px;border-radius:12px;font-size:11px;margin:2px 4px 2px 0;font-weight:500}
+.back-top{position:fixed;bottom:24px;right:24px;width:40px;height:40px;background:var(--c-accent);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;z-index:50;transition:opacity .3s;opacity:.65}
+.back-top:hover{opacity:1}
+.sidebar::-webkit-scrollbar{width:4px}
+.sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.2);border-radius:2px}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-thumb{background:#c0bdb8;border-radius:3px}
+
+@media print{.sidebar,.back-top,.menu-toggle,.cover{display:none!important}.main{margin-left:0;padding:0;max-width:none}.card{box-shadow:none;break-inside:avoid;border:1px solid #ccc}.section{margin-bottom:24px}.highlight{background:#f0f0f0!important;color:#000!important}body{font-size:12px;line-height:1.5}}
+@media(max-width:900px){.col2,.col3{grid-template-columns:1fr}.concept-grid{grid-template-columns:1fr}.menu-toggle{display:flex}.sidebar{transform:translateX(-100%);transition:transform .25s ease;box-shadow:4px 0 16px rgba(0,0,0,.2)}.main{margin-left:0;padding:20px 16px}.section-header h2{font-size:21px}.stat-grid{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}.stat-card .num{font-size:24px}.cover h1{font-size:24px}.cover .cover-stats{gap:20px}.cover .cover-stat .num{font-size:26px}}
+@media(max-width:480px){.card{padding:16px}.data-table{font-size:11px}.data-table thead th,.data-table tbody td{padding:5px 8px}.cover h1{font-size:21px}.cover .ring:nth-of-type(2),.cover .ring:nth-of-type(3){display:none}}
+</style>
+</head>
+<body>
+<section class="cover">
+<div class="nodes"><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div></div>
+<div class="ring"></div><div class="ring"></div><div class="ring"></div>
+<div class="content">
+<div class="badge">东北大学 · 第二十批大学生创新训练计划 · 项目编号 261040</div>
+<h1>大语言模型赋能下<br>沈阳<span class="accent">"东北亚国际化中心城市"</span><br>形象建构的多维话语分析</h1>
+<p class="subtitle">Multidimensional Discourse Analysis of Shenyang's Image Construction<br>as a "Northeast Asia International Central City" Empowered by LLMs</p>
+<div class="cover-stats">
+<div class="cover-stat"><div class="num">3</div><div class="lbl">核心研究维度</div></div>
+<div class="cover-stat"><div class="num">150 万+</div><div class="lbl">自建语料字符数</div></div>
+<div class="cover-stat"><div class="num">11</div><div class="lbl">原创理论概念</div></div>
+<div class="cover-stat"><div class="num">3</div><div class="lbl">阶段性论文</div></div>
+</div></div>
+<div class="scroll-hint"><span>向 下 滚 动 查 看</span><div class="arrow"></div></div>
+</section>
+<button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="菜单">☰</button>
+<aside class="sidebar" onclick="if(window.innerWidth<=900)this.classList.remove('open')">
+<div class="logo"><h2>沈阳"东北亚国际化中心城市"形象建构的多维话语分析</h2><span>东北大学 · 大创项目 261040</span></div>
+<nav>
+<div class="nav-section">项目总览</div>
+<a href="#overview" class="active">项目概览</a>
+<a href="#team">项目组成员</a>
+<a href="#corpus">语料库建设</a>
+<div class="nav-section">三项核心研究</div>
+<a href="#study1">研究一：结构协同与历时演进</a>
+<a href="#study2">研究二：话语场的计量建构</a>
+<a href="#study3">研究三：媒体话语的尺度分工</a>
+<div class="nav-section">理论创新</div>
+<a href="#theory">原创性概念体系</a>
+<a href="#method">方法论框架</a>
+<div class="nav-section">成果与展望</div>
+<a href="#findings">核心发现汇总</a>
+<a href="#achievements">阶段成果</a>
+<a href="#interview">公众访谈计划</a>
+<a href="#plan">后续计划</a>
+</nav>
+<div class="footer">魏子栋 · 东北大学外国语学院<br>© 2025—2027</div>
+</aside>
+<main class="main">
+<section class="section" id="overview"><div class="section-header"><h2>项目概览</h2><div class="sub">Project Overview</div></div>
+<div class="stat-grid"><div class="stat-card"><div class="num">2024.10</div><div class="label">国务院批复沈阳为"东北亚国际化中心城市"</div></div><div class="stat-card"><div class="num">3</div><div class="label">核心研究维度</div></div><div class="stat-card"><div class="num">150万+</div><div class="label">自建语料库总字符数</div></div><div class="stat-card"><div class="num">11</div><div class="label">原创性理论概念</div></div><div class="stat-card"><div class="num">3</div><div class="label">阶段性论文（已完成全文）</div></div><div class="stat-card"><div class="num">2027.03</div><div class="label">预计结题时间</div></div></div>
+<div class="card" style="margin-top:20px"><h3>研究背景与核心问题</h3><p>2024年10月24日，国务院正式批复《沈阳市国土空间总体规划（2021—2035年）》，首次将沈阳的城市性质确定为<strong>"东北亚国际化中心城市"</strong>，同步定位为"国际性综合交通枢纽城市"与"全国先进制造业基地"。2025年7月，沈阳市委、市政府印发《沈阳市建设东北亚国际化中心城市行动纲要（2025—2035年）》，构建<strong>"一枢纽四中心"</strong>战略框架，分2027年、2030年、2035年三阶段推进，部署22个专项行动。</p><p>然而，沈阳在国际话语场中长期面临<strong>"有产能、无声量"</strong>的结构性困境。本项目融合<strong>批评话语分析（CDA）</strong>、<strong>语料库语言学</strong>与<strong>大语言模型（LLM）技术</strong>，从"政府—媒体—公众"三个维度系统考察沈阳国际化城市身份的话语建构机制，提炼具有跨案例推广潜力的原创性理论概念与分析工具。</p><div class="highlight"><strong>核心研究问题：</strong>在沈阳从"东北地区重要的中心城市"向"东北亚国际化中心城市"战略升格的进程中，（1）政策话语如何通过语义网络建构这一身份？（2）政府与媒体话语之间存在怎样的协同与漂移？（3）不同层级的媒体如何在"核心定位统一、外围话语分化"的生态中实现"协调中的分工"？</div></div>
+<div class="card"><h3>研究逻辑链</h3><p style="text-align:center;font-size:14px;letter-spacing:1px;padding:8px 0">政府政策话语（<a href="#study1">研究一</a>）&nbsp;&nbsp;→&nbsp;&nbsp;政媒话语漂移（<a href="#study2">研究二</a>）&nbsp;&nbsp;→&nbsp;&nbsp;媒体尺度分工（<a href="#study3">研究三</a>）&nbsp;&nbsp;→&nbsp;&nbsp;公众反馈访谈（<a href="#interview">计划中</a>）</p><p style="text-align:center;font-size:12px;color:var(--c-muted)">"文本层 → 互文层 → 传播层 → 受众层" 四层递进分析架构</p></div>
+</section>
+
+<section class="section" id="team"><div class="section-header"><h2>项目组成员</h2><div class="sub">Team · 东北大学外国语学院</div></div>
+<div class="card"><h3>指导教师</h3><div class="col2"><div><h4>杨林 教授</h4><p style="font-size:13px;color:var(--c-muted)">清华大学博士 · 北京外国语大学博士后</p><p style="font-size:13px">主持多项国家及辽宁省社科基金重点项目。在选题凝练阶段，敏锐指出2024年国务院批复的学术价值，指导将研究焦点精准聚焦至"东北亚国际化中心城市"这一特定话语实践。推荐Bourdieu话语场理论、Edelman符号政治学与Habermas系统/生活世界二分等关键理论资源。</p></div><div><h4>高丽新 副教授</h4><p style="font-size:13px;color:var(--c-muted)">深耕语用学与话语分析领域</p><p style="font-size:13px">多次指导本科生大创项目并获优异成绩。推荐LogDice关联度量、非加权JSD散度及对数似然比检验（LLR）等语料库语言学标准统计指标，共同把关多语言Transformer预训练模型选择及跨层级对比分析的样本量阈值。</p></div></div></div>
+<div class="stat-grid" style="margin-top:16px"><div class="stat-card"><div style="font-size:18px;font-weight:700;color:var(--c-accent)">魏子栋</div><div class="label">项目负责人 · 40%</div><div style="font-size:11px;color:var(--c-muted);margin-top:4px">总体设计 · 算法落地<br>理论框架 · 主笔三篇论文</div></div><div class="stat-card"><div style="font-size:18px;font-weight:700;color:var(--c-accent)">周驰</div><div class="label">核心成员 · 30%</div><div style="font-size:11px;color:var(--c-muted);margin-top:4px">语料库构建 · CPDA编码<br>PMI共现 · 定性语境比较</div></div><div class="stat-card"><div style="font-size:18px;font-weight:700;color:var(--c-accent)">崔佳艺</div><div class="label">预备成员 · 10%</div><div style="font-size:11px;color:var(--c-muted);margin-top:4px">媒体语料库<br>多语言Transformer分析</div></div><div class="stat-card"><div style="font-size:18px;font-weight:700;color:var(--c-accent)">李云泽</div><div class="label">预备成员 · 10%</div><div style="font-size:11px;color:var(--c-muted);margin-top:4px">双子库建设<br>PMI共现强度计算</div></div><div class="stat-card"><div style="font-size:18px;font-weight:700;color:var(--c-accent)">刘靳马杨</div><div class="label">预备成员 · 10%</div><div style="font-size:11px;color:var(--c-muted);margin-top:4px">jieba分词预处理<br>75个术语词典构建</div></div></div>
+</section>
+
+<section class="section" id="corpus"><div class="section-header"><h2>语料库建设</h2><div class="sub">Self-Built Corpora · 三套独立语料库 · 总规模超150万字符（约为申报书预估的12倍）</div></div>
+<div class="card"><h3>语料库全景</h3><table class="data-table"><thead><tr><th>语料库</th><th>文档数</th><th>有效文本</th><th>来源</th><th>时间跨度</th><th>预处理</th></tr></thead><tbody><tr><td><strong>政策话语语料库</strong></td><td class="num">158</td><td>约73万字</td><td>国务院批复 · 政府工作报告 · 五年规划 · 委办局文件 · 行动纲要</td><td>2016—2035</td><td rowspan="3" style="font-size:12px">jieba/spaCy分词<br>词性标注 · 停用词过滤<br>75个术语自定义词典</td></tr><tr><td><strong>中文媒体语料库</strong></td><td class="num">176</td><td>85,269 token</td><td>央级59篇 · 省级52篇 · 市级35篇 · 英文30篇</td><td>2018—2026</td></tr><tr><td><strong>英文对外传播语料库</strong></td><td class="num">30</td><td>9,529 token</td><td>中国日报英文版 · 新华丝路 · 沈阳市政府英文官网</td><td>2018—2026</td></tr></tbody></table></div>
+<details><summary>查看语料来源详细分类</summary><div class="detail-content"><div class="col2"><div class="card"><h4>政策语料 · 五大核心渠道</h4><p style="font-size:13px">① 历年官方政府工作报告与五年规划纲要<br>② 市委市政府及关键委办局发布的专项规划与实施意见<br>③ 市人大审议通过的地方性法规与决议<br>④ 官方政策解读与新闻发布会文字实录<br>⑤ 面向2035远景目标的前瞻性行动纲要</p></div><div class="card"><h4>媒体语料 · 四级分层</h4><p style="font-size:13px"><strong>央级（59篇）：</strong>人民日报、新华社、央视新闻<br><strong>省级（52篇）：</strong>辽宁日报及16家省级媒体<br><strong>市级（35篇）：</strong>沈阳日报、云盛京等8家<br><strong>英文（30篇）：</strong>China Daily、新华丝路等7家</p></div></div></div></details>
+</section>
+
+<section class="section" id="study1"><div class="section-header"><h2>研究一：结构协同与历时演进</h2><div class="sub">Study 1 · "东北亚国际化中心城市"身份建构的政策批判话语分析 · 作者：杨林、魏子栋、周驰</div></div>
+<div class="card"><div class="meta"><span>CPDA</span><span>复杂网络分析</span><span>BERTopic</span><span>PMG模型</span></div><h3>研究框架</h3><p>融合<strong>批判性政策话语分析（CPDA）</strong>与<strong>复杂自适应系统理论（CAS）</strong>，构建X（目标）—Y（工具）—Z（价值）三维结构协同分析框架。以McGuigan"国家—市场—市民"三维话语空间理论为分类框架，综合运用Gephi复杂网络分析（Louvain社区检测）、BERTopic动态主题建模与政策效力评价模型（PMG），从"结构协同"与"历时演进"两个维度对约130万字符的政策文本展开全景量化分析。</p>
+<details><summary>查看表1：核心节点量化属性与话语功能定位</summary><div class="detail-content"><table class="data-table"><thead><tr><th>核心节点</th><th>结构维度</th><th>话语空间</th><th>出度</th><th>入度</th><th>特征向量中心性</th></tr></thead><tbody><tr><td>鼓励</td><td>价值(Z)</td><td>国家话语</td><td class="num">0</td><td class="num">99</td><td class="num">1.0000</td></tr><tr><td>高质量</td><td>价值(Z)</td><td>国家话语</td><td class="num">1</td><td class="num">98</td><td class="num">0.9653</td></tr><tr><td>领域</td><td>目标(X)</td><td>混合话语</td><td class="num">2</td><td class="num">97</td><td class="num">0.9317</td></tr><tr><td>金融</td><td>工具(Y)</td><td>市场话语</td><td class="num">4</td><td class="num">95</td><td class="num">0.8673</td></tr><tr><td>辽宁</td><td>载体</td><td>国家/市民</td><td class="num">7</td><td class="num">92</td><td class="num">0.7777</td></tr><tr><td>经济</td><td>目标(X)</td><td>市场话语</td><td class="num">18</td><td class="num">81</td><td class="num">0.5120</td></tr><tr><td>国际</td><td>目标/工具</td><td>市场/市民</td><td class="num">71</td><td class="num">28</td><td class="num">0.0332</td></tr><tr><td>企业</td><td>工具(Y)</td><td>市场话语</td><td class="num">91</td><td class="num">8</td><td class="num">0.0041</td></tr><tr><td>产业</td><td>工具(Y)</td><td>市场话语</td><td class="num">95</td><td class="num">4</td><td class="num">0.0017</td></tr><tr><td>创新</td><td>工具(Y)</td><td>市场话语</td><td class="num">83</td><td class="num">16</td><td class="num">0.0117</td></tr></tbody></table></div></details>
+<details><summary>查看表2：三大战略周期核心主题词丛与语义频率</summary><div class="detail-content"><table class="data-table"><thead><tr><th>时间切片阶段</th><th>核心主题词丛与语义频率</th></tr></thead><tbody><tr><td><strong>2016—2020（蓄力期）</strong></td><td>主题0：企业、产业、创新、服务、经济（频率：27）<br>主题1：物流、企业、国际、消费（频率：6）<br><span class="tag">PMG均值 2.8</span> <span class="tag">强制工具为主</span></td></tr><tr><td><strong>2021—2024（转型期）</strong></td><td>主题0：国际、空间、规划、企业、国土（频率：11）<br>主题1：跨境、电商、企业、国际、消费（频率：2）<br>主题2：旅游、景区、文化、文旅、企业（频率：2）<br><span class="tag">PMG均值 3.5</span> <span class="tag">市场话语兴起</span></td></tr><tr><td><strong>2025—2035（爆发期）</strong></td><td>主题0：产业、创新、服务、企业、国际（频率：97）<br>主题1：外贸、电商、跨境、企业、物流（频率：4）<br>主题2：旅游、退税、文化、景区、历史（频率：8）<br><span class="tag">PMG均值 4.6</span> <span class="tag">制度型开放</span></td></tr></tbody></table></div></details>
+<div class="highlight"><strong>核心发现：</strong>话语网络呈显著<strong>权力不对称</strong>分布——市场侧节点（产业出度95、企业出度91）为"能量发动机"，国家话语节点（鼓励入度99、中心性1.00）构成全网终极收敛靶心。三大战略周期PMG效力从2.8→3.5→4.6阶梯跃升，政策话语完成从"内生蓄力"到"制度型开放"的范式转型。地缘词汇对比有力证实沈阳国际化身份建构的根本驱动力为<strong>内生性结构转型需求</strong>。</div></div>
+</section>
+
+<section class="section" id="study2"><div class="section-header"><h2>研究二：话语场的计量建构</h2><div class="sub">Study 2 · 基于上下文嵌入的政媒话语漂移研究 · 作者：高丽新、魏子栋、李云泽、刘靳马杨</div></div>
+<div class="card"><div class="meta"><span>Chinese-RoBERTa</span><span>UDF三组件模型</span><span>Bootstrap</span><span>置换检验</span></div><h3>研究框架与UDF三组件模型</h3><p>基于<strong>Bourdieu话语场理论</strong>，系统整合Edelman符号政治学、Habermas系统/生活世界二分及Fairclough互文性理论。自建政府政策（158篇）与媒体报道（147篇）双子库，提出<strong>"城市话语场强度"（UDF）三组件计量模型</strong>：DDC（分布式语境距离，以Chinese-RoBERTa提取25个核心词上下文嵌入计算余弦距离，经1000次Bootstrap+置换检验双验证）、CollocFrame（搭配框架差异，以非加权JSD测量跨语料PMI搭配分布）、ModalForce（情态力度密度，构建汉语五级情态词典）。三组件经min-max归一化后等权合成。</p>
+<details><summary>查看DDC话语漂移系数排行（部分）</summary><div class="detail-content"><table class="data-table"><thead><tr><th>排名</th><th>词语</th><th>频次(政/媒)</th><th>DDC</th><th>Bootstrap 95% CI</th><th>p值</th></tr></thead><tbody><tr><td class="num">1</td><td>班列</td><td class="num">107/150</td><td class="num">0.0183</td><td>[0.011,0.033]</td><td>&lt;0.01</td></tr><tr><td class="num">2</td><td>投资</td><td class="num">558/255</td><td class="num">0.0128</td><td>[0.010,0.018]</td><td>&lt;0.01</td></tr><tr><td class="num">3</td><td>数字</td><td class="num">382/63</td><td class="num">0.0125</td><td>[0.010,0.021]</td><td>&lt;0.01</td></tr><tr><td colspan="6" style="text-align:center;color:var(--c-muted)">··· 中间20词省略 ···</td></tr><tr><td class="num">23</td><td>合作</td><td class="num">854/662</td><td class="num">0.0028</td><td>[0.002,0.004]</td><td>&lt;0.01</td></tr><tr><td class="num">24</td><td>东北亚国际化</td><td class="num">195/280</td><td class="num">0.0025</td><td>[0.002,0.004]</td><td>&lt;0.01</td></tr><tr><td class="num">25</td><td>东北亚</td><td class="num">491/557</td><td class="num">0.0021</td><td>[0.002,0.003]</td><td>&lt;0.01</td></tr></tbody></table></div></details>
+<div class="highlight"><strong>核心发现：</strong>漂移量呈清晰<strong>两极化分布</strong>——高漂移端为操作性概念（班列/投资/数字），低漂移端为符号性概念（东北亚/东北亚国际化/合作）。验证<strong>"符号共识—实践分歧"二元结构</strong>。"东北亚国际化"的JS散度精确为0，Top-30搭配框架完全重合。发现"嵌入层共识但搭配层分歧"的不对称现象，从数理层面证实了<strong>UDF三组件的非冗余性</strong>。</div></div>
+</section>
+
+<section class="section" id="study3"><div class="section-header"><h2>研究三：媒体话语的尺度分工</h2><div class="sub">Study 3 · 沈阳"东北亚国际化中心城市"建构的媒体话语研究 · 作者：魏子栋、周驰、崔佳艺</div></div>
+<div class="card"><div class="meta"><span>CADS</span><span>LLR关键词</span><span>搭配网络</span><span>n-gram</span><span>多语言Transformer</span></div><h3>研究框架</h3><p>自建中英文双语媒体语料库（176篇，85,269 token），含<strong>中央、省级、市级、英文</strong>四个层级。融合语料库辅助话语分析（CADS）与多语言Transformer语义场分析，从关键词分析（LLR）、搭配分析（LogDice）、n-gram提取、历时追踪及跨语言对齐五个路径展开系统考察。</p>
+<details><summary>查看关键数据</summary><div class="detail-content"><table class="data-table"><thead><tr><th>词语</th><th>央—市</th><th>央—省</th><th>市—省</th><th>差异范围</th></tr></thead><tbody><tr><td>东北亚</td><td class="num">0.912</td><td class="num">0.960</td><td class="num">0.970</td><td class="num">0.058</td></tr><tr><td>国际化</td><td class="num">0.983</td><td class="num">0.968</td><td class="num">0.971</td><td class="num">0.015</td></tr><tr style="background:var(--c-gold-bg)"><td><strong>东北亚国际化中心城市</strong></td><td class="num"><strong>0.992</strong></td><td class="num"><strong>0.987</strong></td><td class="num"><strong>0.987</strong></td><td class="num"><strong>0.005</strong></td></tr></tbody></table><p style="font-size:12px;color:var(--c-muted);margin-top:8px">跨语言编译三项调整：① 地理框架重置（东北亚→Northeast China）② 本体侧重调整（枢纽→center）③ 能动表达消隐（"打造"423次在英文中无对应）。10对核心概念中英余弦相似度仅[0.811,0.921]。</p></div></details>
+<div class="highlight"><strong>核心发现：</strong>中文媒体三级呈<strong>"协调中的分工"</strong>模式——央级聚焦活动平台语域，市级聚焦政策纲领语域，省级聚焦基础设施语域。市级媒体是<strong>主要话语生产者</strong>（61.22次/万词，为央级2.3倍、省级2.4倍）。跨语言分析发现<strong>"语种语境聚类"效应</strong>。2023年为<strong>话语重定位的结构性转折点</strong>。</div></div>
+</section>
+
+<section class="section" id="theory"><div class="section-header"><h2>原创性概念体系</h2><div class="sub">Theoretical Innovations · 11项原创概念</div></div>
+<div class="concept-grid">
+<div class="concept-card"><h4>城市话语场强度（UDF）三组件模型</h4><div class="abbr">DDC + CollocFrame + ModalForce</div><p>三个非冗余组件经min-max归一化后等权合成。实证数据以"嵌入层共识但搭配层分歧"的不对称现象证实了<strong>方法论非冗余性</strong>。为CDA量化转向提供标准化工具。</p></div>
+<div class="concept-card"><h4>嵌入互文性<br>Embedding Intertextuality</h4><p>将Fairclough互文性理论推进至<strong>向量空间几何层面</strong>，以DDC作为互文性强度的连续量化测度。与显性互文性、互语篇性构成<strong>三层递进分析架构</strong>。</p></div>
+<div class="concept-card"><h4>双层话语协同假说（DLCH）</h4><div class="abbr">Double-Layered Discourse Cohesion Hypothesis</div><p>政媒话语在抽象符号层保持深度共识，在具体实践层呈现<strong>"操作—展示"功能分工</strong>：政府操作层（制度建构）vs 媒体展示层（叙事激活）。</p></div>
+<div class="concept-card"><h4>"协调中的分工"模式</h4><p>央/省/市三级在核心定位语义上高度一致（余弦≥0.987），通过语境装配与叙事策略的层级差异化实现有序分工。</p></div>
+<div class="concept-card"><h4>跨语言"话语重新校准"层次化模型</h4><p>① 地理框架重置 ② 本体侧重调整 ③ 能动表达消隐。揭示城市国际传播中的话语折扣机制。</p></div>
+<div class="concept-card"><h4>语种语境聚类效应</h4><p>在多语言Transformer空间中，所有概念按语种而非语义聚类，语境特征对向量分布的影响强于语义内容本身。</p></div>
+</div>
+<div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px"><span class="tag">话语生态</span><span class="tag">三层递进分析架构</span><span class="tag">话语事件生命周期</span><span class="tag">"身份重启"</span><span class="tag">符号共识—实践分歧</span></div>
+</section>
+
+<section class="section" id="method"><div class="section-header"><h2>方法论框架</h2><div class="sub">Methodological Framework</div></div>
+<div class="card"><h3>四层分析方法体系</h3><table class="data-table"><thead><tr><th>分析层次</th><th>核心方法</th><th>工具/模型</th><th>对应研究</th></tr></thead><tbody><tr><td><strong>语义内容层</strong></td><td>动态主题建模 · 政策效力评价 · 关键词检验</td><td>BERTopic + c-TF-IDF · PMG · LLR</td><td>研究一</td></tr><tr><td><strong>网络拓扑层</strong></td><td>复杂网络分析 · 社区检测 · 中心性测度</td><td>Gephi + Louvain算法</td><td>研究一</td></tr><tr><td><strong>向量空间层</strong></td><td>上下文嵌入 · 语义对齐 · 降维可视化</td><td>Chinese-RoBERTa · paraphrase-multilingual-mpnet · UMAP</td><td>研究二、三</td></tr><tr><td><strong>统计推断层</strong></td><td>Bootstrap · 置换检验 · 散度计算</td><td>1000次Bootstrap CI · 置换检验 · JS散度</td><td>研究二</td></tr></tbody></table></div>
+<div class="card"><h3>PMG 政策效力评价模型</h3><p style="text-align:center;font-size:18px;padding:14px;background:var(--c-accent);color:#fff;border-radius:6px">PMG = (1/N) × Σ<sub>j=1</sub><sup>N</sup> (p<sub>j</sub> · g<sub>j</sub>)</p><p style="font-size:13px;margin-top:10px">p<sub>j</sub> 为颁布主体力度（国务院5分→地方部委1分），g<sub>j</sub> 为目标明确度（清晰量化5分→宏观愿景1分）。</p></div>
+</section>
+
+<section class="section" id="findings"><div class="section-header"><h2>核心发现汇总</h2><div class="sub">Key Findings</div></div>
+<div class="col2"><div class="card" style="border-left:4px solid var(--c-accent)"><h4>结构层面</h4><p style="font-size:13px">话语能量流动闭环：市场企业为能量发源地（高出度、低中心性）→ 领域为收敛转化枢纽 → 高质量为终极价值靶心。Y→X工具驱动通道权重最高，"领域→高质量"与"重要→领域"双向闭环消除科层语义歧义。</p></div><div class="card" style="border-left:4px solid var(--c-accent2)"><h4>时间层面</h4><p style="font-size:13px">三大战略周期PMG效力阶梯跃升（2.8→3.5→4.6）。爆发期频率（97）较转型期（11）增长约8.8倍。2023年为话语重定位结构性转折点。</p></div><div class="card" style="border-left:4px solid var(--c-gold)"><h4>政媒关系</h4><p style="font-size:13px">"符号共识—实践分歧"二元结构：25词中24词p&lt;0.01。抽象概念DDC极小，操作概念漂移显著。DDC与JS不对称性证实话语分歧多维性。</p></div><div class="card" style="border-left:4px solid var(--c-red)"><h4>跨语言</h4><p style="font-size:13px">中英概念按语种聚类。中文"打造"（423次）在英文中消隐，地理框架从"东北亚"退化。余弦相似度仅[0.811,0.921]，显著语义折扣。</p></div></div>
+</section>
+
+<section class="section" id="achievements"><div class="section-header"><h2>阶段成果</h2><div class="sub">Achievements · 截至2026年5月</div></div>
+<div class="card"><h3>学术论文三篇</h3><table class="data-table"><thead><tr><th>#</th><th>论文标题</th><th>作者</th><th>拟投稿</th></tr></thead><tbody><tr><td class="num">1</td><td>"东北亚国际化中心城市"身份建构的政策批判话语分析</td><td>魏子栋、周驰（杨林教授指导）</td><td>第八届形象研究与全球传播研究生论坛</td></tr><tr><td class="num">2</td><td>"东北亚国际化中心城市"话语场的计量建构</td><td>高丽新、魏子栋、李云泽、刘靳马杨</td><td>Discourse &amp; Society 或 Corpora</td></tr><tr><td class="num">3</td><td>媒体话语的尺度分工</td><td>魏子栋、周驰、崔佳艺</td><td>JLP 或《新闻与传播研究》</td></tr></tbody></table></div>
+<div class="col3" style="margin-top:12px"><div class="card"><h4>自建语料库</h4><p style="font-size:13px">三套独立语料库，总规模超150万字符（约为申报书预估的12倍），时间跨度2016—2035年，已完成标准化预处理。</p></div><div class="card"><h4>计量方法工具包</h4><p style="font-size:13px">覆盖四层分析体系，配套Bootstrap与置换检验统计推断框架。拟结题后开源发布。</p></div><div class="card"><h4>可视化成果</h4><p style="font-size:13px">18幅专业图表：搭配网络图12幅、历时演化图3幅、语义场UMAP投影2幅、跨层级热力图1幅。</p></div></div>
+</section>
+
+<section class="section" id="interview"><div class="section-header"><h2>公众访谈计划</h2><div class="sub">Public Interview Plan · 2026年6—7月</div></div>
+<div class="card"><h3>访谈设计</h3><p>采用<strong>"最大差异抽样"</strong>策略选取8—10名公众代表，半结构化深度访谈，每位30—45分钟。Whisper API转录→人工校核→GPT辅助编码→人工复核。</p><div class="col2" style="margin-top:12px"><div><h4>四类受访群体</h4><p style="font-size:13px"><strong>高校青年学者（2—3人）：</strong>城市规划/公共管理/国际关系<br><strong>社区工作者（2人）：</strong>市政治理与民生感知<br><strong>本地企业家（2—3人）：</strong>制造业/外贸/跨境电商<br><strong>在沈外籍人士（2人）：</strong>跨文化比较视角</p></div><div><h4>四大访谈模块</h4><p style="font-size:13px"><strong>A. 城市形象基础认知（5min）</strong><br><strong>B. 国际化定位认知（15min）</strong><br><strong>C. 话语感知与媒介接触（10min）</strong><br><strong>D. 公众参与与期待（10min）</strong></p></div></div></div>
+</section>
+
+<section class="section" id="plan"><div class="section-header"><h2>后续研究计划</h2><div class="sub">Next Steps · 2026.06—2027.03</div></div>
+<div class="timeline"><div class="timeline-item"><div class="date">2026.06—07 · 最高优先级</div><h4>公众反馈维度集中推进</h4><p>LDA主题建模+8—10人半结构化深度访谈，四批次推进，48小时内完成转录与编码。</p></div><div class="timeline-item"><div class="date">2026.08</div><h4>转录校对与跨群体对比分析</h4><p>完成人工校核、LDA建模及跨群体对比，与政府/媒体维度发现形成三角互证。</p></div><div class="timeline-item"><div class="date">2026.09—12</div><h4>三维话语对比论文+UDF权重校准</h4><p>撰写"政府—媒体—公众"三维对比论文。AHP权重校准+PCA稳健性检验。</p></div><div class="timeline-item"><div class="date">2027.01—03</div><h4>论文投稿+工具包开源+结题</h4><p>三篇论文正式投稿，方法工具包开源发布，结题报告撰写与成果归档。</p></div></div>
+</section>
+</main>
+<button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+document.querySelectorAll('.sidebar nav a').forEach(a=>{a.addEventListener('click',()=>{if(window.innerWidth<=900)document.querySelector('.sidebar').classList.remove('open')})});
+const ns=document.querySelectorAll('.sidebar nav a'),ss=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{let c='';ss.forEach(s=>{if(pageYOffset>=s.offsetTop-100)c=s.id});ns.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+c))});
+</script>
+</body>
+</html>
