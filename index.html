@@ -44,7 +44,7 @@ p{margin-bottom:8px}
   background:linear-gradient(170deg,#030c15 0%,#081826 18%,#0c2135 38%,#0e2c45 58%,#0c2338 78%,#06111e 100%);
   overflow:hidden;text-align:center;padding:80px 28px;user-select:none;
 }
-.cover canvas{position:absolute;inset:0;opacity:.55}
+/* canvas removed */
 .cover .c-content{position:relative;z-index:3;max-width:760px}
 .cover .c-badge{
   display:inline-block;border:1px solid rgba(255,255,255,.16);padding:6px 18px;
@@ -230,7 +230,6 @@ hr.divider{border:none;border-top:1px solid var(--c-line);margin:20px 0}
 
 <!-- ====== COVER ====== -->
 <section class="cover">
-  <canvas id="coverCanvas"></canvas>
   <div class="c-content">
     <div class="c-badge">Northeastern University &nbsp;·&nbsp; Innovation Training Program &nbsp;·&nbsp; #261040</div>
     <h1>沈阳<b>"东北亚国际化中心城市"</b><br>形象建构的多维话语分析</h1>
@@ -636,51 +635,6 @@ hr.divider{border:none;border-top:1px solid var(--c-line);margin:20px 0}
 <button class="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="返回顶部">&uarr;</button>
 
 <script>
-// ====== COVER CANVAS ANIMATION ======
-(function(){
-  const canvas=document.getElementById('coverCanvas'),ctx=canvas.getContext('2d');
-  let W,H,particles=[],connections=[];
-  function resize(){W=canvas.width=canvas.offsetWidth;H=canvas.height=canvas.offsetHeight}
-  resize();window.addEventListener('resize',resize);
-
-  // Create particles
-  for(let i=0;i<50;i++){
-    particles.push({
-      x:Math.random()*W,y:Math.random()*H,
-      vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,
-      r:Math.random()*1.8+.4,
-      alpha:Math.random()*.35+.1
-    });
-  }
-
-  function animate(){
-    ctx.clearRect(0,0,W,H);
-    // Update & draw particles
-    for(let p of particles){
-      p.x+=p.vx;p.y+=p.vy;
-      if(p.x<0)p.x=W;if(p.x>W)p.x=0;
-      if(p.y<0)p.y=H;if(p.y>H)p.y=0;
-      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(160,210,240,${p.alpha})`;ctx.fill();
-    }
-    // Draw connections between nearby particles
-    for(let i=0;i<particles.length;i++){
-      for(let j=i+1;j<particles.length;j++){
-        const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
-        const dist=Math.sqrt(dx*dx+dy*dy);
-        if(dist<130){
-          ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);
-          ctx.lineTo(particles[j].x,particles[j].y);
-          ctx.strokeStyle=`rgba(140,200,230,${.06*(1-dist/130)})`;
-          ctx.lineWidth=.5;ctx.stroke();
-        }
-      }
-    }
-    requestAnimationFrame(animate);
-  }
-  animate();
-})();
-
 // ====== SIDEBAR ACTIVE LINK ======
 const secs=document.querySelectorAll('section[id]'),navs=document.querySelectorAll('.sidebar nav a');
 window.addEventListener('scroll',()=>{
